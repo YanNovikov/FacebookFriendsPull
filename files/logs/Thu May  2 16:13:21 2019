@@ -1,53 +1,3 @@
-# Facebook friends pull
-
-Clone this repository:
-
-```bash
-$ git clone https://github.com/YanNovikov/Generator-exchange-orders.git
-```
-
-Additional modules:
-```bash
-$ pip install -r /path/to/project/folder/requirements.txt 
-```
-
-Meet, friends pull
---
-You have to install the latest version of Google Chrome: https://www.google.ru/chrome/
-
-It works automatically:
-* First of all browser starts working
-* Secondly you are signed in Facebook
-* Finally you have a list of your friends with Names and Links to profiles
-
-
-You can set credentials in configurations. Example is defaults.json in dirrectory files/
-
----
-#How to use?
-
-## Start app
-
-```
-$ python launcher.py -c --loggermode=info --configs customconfigs.json
-```
-
---loggermode it is a level of output logs. Can be: trace, debug, info, warning, error, critical, fatal.
-
--f file writing logs.
-
--c console writing logs.
-
---configs is a path to your config file.
-
-All options are not required.
-By default is info level, console and file writing, defaults.json
-
-
----
-## See result
-```bash
-$ python launcher.py --loggermode=debug
 [LOGGER]: Started with default settings.
 [LOGGER]: Logger mode is now set to debug.
 [LOGGER]: Logger output goes to file files/logs/Thu May  2 16:13:21 2019.
@@ -94,4 +44,39 @@ https://www.facebook.com/sasha.vlasenko3?fref=pb&hc_location=friends_tab
 Елена Маршуг
 https://www.facebook.com/elena.marshug?fref=pb&hc_location=friends_tab
 
-```
+Совладелеца
+https://www.facebook.com/pages/%D0%A1%D0%BE%D0%B2%D0%BB%D0%B0%D0%B4%D0%B5%D0%BB%D0%B5%D1%86%D0%B0/242974209781442
+
+Kristina Vasylieva
+https://www.facebook.com/kristina.vasylieva.50?fref=pb&hc_location=friends_tab
+
+Кристина Кузнецова
+https://www.facebook.com/profile.php?id=100017307994300&fref=pb&hc_location=friends_tab
+
+Zheka Polikarpov
+https://www.facebook.com/profile.php?id=100017199335279&fref=pb&hc_location=friends_tab
+
+Дарья Таран
+https://www.facebook.com/profile.php?id=100013874353860&fref=pb&hc_location=friends_tab
+
+Марина Ряснянская
+https://www.facebook.com/profile.php?id=100017196135162&fref=pb&hc_location=friends_tab
+
+Дарья Невмирыч
+https://www.facebook.com/profile.php?id=100017351672670&fref=pb&hc_location=friends_tab
+
+Максим Чугай
+https://www.facebook.com/profile.php?id=100009606347703&fref=pb&hc_location=friends_tab
+
+Александра Мирошниченко
+https://www.facebook.com/profile.php?id=100017324343258&fref=pb&hc_location=friends_tab
+
+Ekaterina Korh
+https://www.facebook.com/ekaterina.korh.3?fref=pb&hc_location=friends_tab
+
+Лена Нижегольцева
+https://www.facebook.com/profile.php?id=100017317381097&fref=pb&hc_location=friends_tab
+
+Алена Ольховик
+https://www.facebook.com/profile.php?id=100017188363219&fref=pb&hc_location=friends_tab
+[INFO]: Stopping browser

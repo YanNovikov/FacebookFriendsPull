@@ -7,5 +7,3 @@ login_button_id = "loginbutton"
 profile_button_id = "userNav"
 friends_selector = "[data-tab-key=\'friends\']"
 every_friend_selector = "[data-testid=\'friend_list_item\'] .uiProfileBlockContent a:first-child"
-
-truncate_data = "fref=pb&hc_location=friends_tab"

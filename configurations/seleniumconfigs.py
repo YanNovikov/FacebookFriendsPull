@@ -12,7 +12,7 @@ class SeleniumConfigs:
         try:
             configs = Configuration().configs
             self.driver_location = configs["driver_location"]
-            self.action_delay = configs["action_delay"]
+            self.delay = configs["delay"]
             self.login = configs["login"]
             self.password = configs["password"]
             log.INFO("Configurations for selenium loaded.")

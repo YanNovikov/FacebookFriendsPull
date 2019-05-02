@@ -10,6 +10,22 @@ class ElementsPuller:
         self.log = Logger()
         self._browser = browser
 
+    def getelement(self, waiting, by, condition, type):
+        try:
+            wait = WebDriverWait(self._browser, waiting)
+            exp_conditions = None
+            if type is "clickable":
+                exp_conditions = expected_conditions.element_to_be_clickable((by, condition))
+            elif type is "text":
+                exp_conditions = expected_conditions.presence_of_element_located((by, condition))
+            elif type is "list":
+                exp_conditions = expected_conditions.presence_of_all_elements_located((by, condition))
+            if exp_conditions:
+                return wait.until(exp_conditions)
+        except TimeoutException:
+            self.log.ERROR("Could not load clickable element [{}]".format(condition))
+            return None
+
     def clickable(self, wait_time, by, condition):
         try:
             wait = WebDriverWait(self._browser, wait_time)

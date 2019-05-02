@@ -26,9 +26,9 @@ def initialize(args):
 
 
 def execute():
-    displayer = AccountInfo(SeleniumConfigs().driver_location, SeleniumConfigs().action_delay)
+    displayer = AccountInfo(SeleniumConfigs().driver_location, SeleniumConfigs().delay)
     displayer.signin(SeleniumConfigs().login, SeleniumConfigs().password)
-    displayer.get_friends_dict()
+    displayer.showfriends()
     displayer.finalize()
 
 
