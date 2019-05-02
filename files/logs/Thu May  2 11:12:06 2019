@@ -1,4 +1,0 @@
-[LOGGER]: Started with default settings.
-[INFO]: Initializing application...
-[INFO]: Loading configs from files/defaults.json.
-[ERROR]: Configuration does not fits arguments. u'datafilename'

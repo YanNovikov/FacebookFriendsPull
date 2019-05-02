@@ -1,6 +1,6 @@
 {
-  "driver_location": "./env/chromedriver.exe",
+  "driver_location": "env/chromedriver",
   "action_delay": 1,
   "login": "kizlevich1999@mail.ua",
-  "password": "16yankiz99"
+  "password": "18YanKiz99"
 }

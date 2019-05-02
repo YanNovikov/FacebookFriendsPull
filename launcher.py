@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from configurations.seleniumconfigs import *
+from services.facebook.AccountInfo import *
 import getopt
 
 def initialize(args):
@@ -25,16 +26,12 @@ def initialize(args):
 
 
 def execute():
-    # executor = Generator()
-    # executor.generate()
-    pass
-
-
-def finalize():
-    pass
+    displayer = AccountInfo(SeleniumConfigs().driver_location, SeleniumConfigs().action_delay)
+    displayer.signin(SeleniumConfigs().login, SeleniumConfigs().password)
+    displayer.get_friends_dict()
+    displayer.finalize()
 
 
 if __name__ == "__main__":
     initialize(sys.argv)
     execute()
-    finalize()
