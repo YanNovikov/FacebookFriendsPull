@@ -1,6 +1,6 @@
 {
-  "driver_location": "env/chromedriver",
-  "delay": 3,
+  "driver_location": "env/chromedrivermac",
+  "delay": 5,
   "login": "kizlevich1999@mail.ua",
   "password": "18YanKiz99"
 }
